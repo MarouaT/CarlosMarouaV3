@@ -1,7 +1,8 @@
 package org.proxi.spring.model;
 
 import javax.persistence.Embeddable;
-
+import javax.xml.bind.annotation.XmlRootElement;
+@XmlRootElement
 @Embeddable
 public class Adresse {
 

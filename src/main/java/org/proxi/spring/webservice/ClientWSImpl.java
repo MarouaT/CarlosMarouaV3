@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 @Service("clientWebService")
 public class ClientWSImpl implements IClientWS {
 
+	
 	@Autowired
 	private CrudClientDAO crudClientDAO;
 
