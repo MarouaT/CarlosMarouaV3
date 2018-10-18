@@ -21,7 +21,7 @@ public class Conseiller extends Personne {
 
 	}
 
-	public Conseiller(Long id, String nom, String prenom) {
+	public Conseiller(int id, String nom, String prenom) {
 		super(id, nom, prenom);
 
 	}
@@ -42,4 +42,11 @@ public class Conseiller extends Personne {
 		this.password = password;
 	}
 
+	@Override
+	public String toString() {
+		return "Conseiller [login=" + login + ", password=" + password + ", getId()=" + getId() + ", getNom()="
+				+ getNom() + ", getPrenom()=" + getPrenom() + "]";
+	}
+
+	
 }

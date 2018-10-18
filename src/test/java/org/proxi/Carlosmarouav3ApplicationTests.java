@@ -22,24 +22,24 @@ public class Carlosmarouav3ApplicationTests {
 	@Test
 	public void contextLoads() {
 //		assertNotNull(crudClientDao);
-		Client c = new Client();
-		Adresse a = new Adresse();
-		CompteCourant cp = new CompteCourant();
-		CompteEpargne ce = new CompteEpargne();
-		ce.setSoldeEpargne(30);
-		cp.setDecouvert(0);
-		cp.setSoldeCourant(1596.3);
-		a.setCodePostal(75000);
-		a.setNumero(12);
-		a.setRue("rue de l'indépendance");
-		a.setVille("Paris");
-		c.setEmail("badr@yahoo.com");
-		c.setNom("Taghzalt");
-		c.setPrenom("Badr");
-		c.setAdresse(a);
-		c.setCompteCourant(cp);
-		c.setCompteEpargne(ce);
-		crudClientDao.save(c);
+//		Client c = new Client();
+//		Adresse a = new Adresse();
+//		CompteCourant cp = new CompteCourant();
+//		CompteEpargne ce = new CompteEpargne();
+//		ce.setSoldeEpargne(30);
+//		cp.setDecouvert(0);
+//		cp.setSoldeCourant(1596.3);
+//		a.setCodePostal(75000);
+//		a.setNumero(12);
+//		a.setRue("rue de l'indépendance");
+//		a.setVille("Paris");
+//		c.setEmail("badr@yahoo.com");
+//		c.setNom("Taghzalt");
+//		c.setPrenom("Badr");
+//		c.setAdresse(a);
+//		c.setCompteCourant(cp);
+//		c.setCompteEpargne(ce);
+//		crudClientDao.save(c);
 
 	}
 
