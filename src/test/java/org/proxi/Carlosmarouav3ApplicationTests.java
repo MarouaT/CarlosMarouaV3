@@ -20,25 +20,25 @@ public class Carlosmarouav3ApplicationTests {
 	private CrudClientDAO crudClientDao;
 	@Test
 	public void contextLoads() {
-//		assertNotNull(crudClientDao);
-		Adresse a = new Adresse();
-		CompteCourant cp= new CompteCourant();
-		CompteEpargne ce = new CompteEpargne();
-		ce.setSoldeEpargne(30);
-		cp.setDecouvert(0);
-		cp.setSoldeCourant(1596.3);
-		a.setCodePostal(75000);
-		a.setNumero(12);
-		a.setRue("rue de l'indépendance");
-		a.setVille("Paris");
-		Client c = new Client();
-		c.setAdresse(a);
-		c.setEmail("badr@yahoo.com");
-		c.setComptecourant(cp);
-		c.setNom("Taghzalt");
-		c.setPrenom("Badr");
-		c.setCompteepargne(ce);
-		crudClientDao.save(c);
+		assertNotNull(crudClientDao);
+//		Adresse a = new Adresse();
+//		CompteCourant cp= new CompteCourant();
+//		CompteEpargne ce = new CompteEpargne();
+//		ce.setSoldeEpargne(30);
+//		cp.setDecouvert(0);
+//		cp.setSoldeCourant(1596.3);
+//		a.setCodePostal(75000);
+//		a.setNumero(12);
+//		a.setRue("rue de l'indépendance");
+//		a.setVille("Paris");
+//		Client c = new Client();
+//		c.setAdresse(a);
+//		c.setEmail("badr@yahoo.com");
+//		c.setComptecourant(cp);
+//		c.setNom("Taghzalt");
+//		c.setPrenom("Badr");
+//		c.setCompteepargne(ce);
+//		crudClientDao.save(c);
 		
 		
 	}
