@@ -15,7 +15,7 @@ public class CompteCourant {
 	private Long idCompteCourant;
 	private double decouvert;
 	private double soldeCourant;
-	@OneToOne(mappedBy="comptecourant")
+	@OneToOne(mappedBy="compteCourant")
 	Client client;
 
 	public CompteCourant() {
