@@ -2,6 +2,8 @@ package org.proxi.spring.model;
 
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
@@ -11,9 +13,11 @@ public class Client extends Personne {
 	private String email;
 	@Embedded
 	Adresse adresse;
-	@Embedded
+	@OneToOne
+	@JoinColumn(name="comptecourant_id",unique=true)
 	CompteCourant comptecourant;
-	@Embedded
+	@OneToOne
+	@JoinColumn(name="compteepargne_id",unique=true)
 	CompteEpargne compteepargne;
 
 	

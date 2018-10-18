@@ -1,12 +1,21 @@
 package org.proxi.spring.model;
 
-import javax.persistence.Embeddable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
-@Embeddable
+@Entity
 public class CompteEpargne {
-
+	@Id
+	@GeneratedValue(strategy= GenerationType.AUTO)
+	private Long idCompteEpargne;
 	private double soldeEpargne;
+	@OneToOne(mappedBy="compteepargne")
+	Client client;
 
 	
 	
