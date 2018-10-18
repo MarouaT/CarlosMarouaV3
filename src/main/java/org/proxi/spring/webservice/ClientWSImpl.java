@@ -41,8 +41,8 @@ public class ClientWSImpl implements IClientWS {
 
 	@Override
 	public Response deleteClients(String id) {
-
-		return null;
+		crudClientDAO.deleteById(Integer.valueOf(id));
+		return Response.ok().build();
 	}
 
 }

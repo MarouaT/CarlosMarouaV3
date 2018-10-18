@@ -9,6 +9,7 @@ import org.proxi.spring.model.Adresse;
 import org.proxi.spring.model.Client;
 import org.proxi.spring.model.CompteCourant;
 import org.proxi.spring.model.CompteEpargne;
+import org.proxi.spring.webservice.ClientWSImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -19,29 +20,34 @@ public class Carlosmarouav3ApplicationTests {
 	@Autowired
 	private CrudClientDAO crudClientDao;
 
+	@Autowired
+	private ClientWSImpl clientWSImpl;
+	
 	@Test
 	public void contextLoads() {
 
 //		assertNotNull(crudClientDao);
-		Client c = new Client();
-		Adresse a = new Adresse();
-		CompteCourant cp = new CompteCourant();
-		CompteEpargne ce = new CompteEpargne();
-		ce.setSoldeEpargne(30);
-		cp.setDecouvert(0);
-		cp.setSoldeCourant(1596.3);
-		a.setCodePostal(75000);
-		a.setNumero(12);
-		a.setRue("rue de l'indépendance");
-		a.setVille("Paris");
-		c.setEmail("badr@yahoo.com");
-		c.setNom("Taghzalt");
-		c.setPrenom("Badr");
-		c.setAdresse(a);
-		c.setCompteCourant(cp);
-		c.setCompteEpargne(ce);
-		crudClientDao.save(c);
-
+		//Créer un client:
+//		Client c = new Client();
+//		Adresse a = new Adresse();
+//		CompteCourant cp = new CompteCourant();
+//		CompteEpargne ce = new CompteEpargne();
+//		ce.setSoldeEpargne(0);
+//		cp.setDecouvert(0);
+//		cp.setSoldeCourant(1500);
+//		a.setCodePostal(75019);
+//		a.setNumero(9);
+//		a.setRue("rue du l'opéra");
+//		a.setVille("Paris");
+//		c.setEmail("Diea@yahoo.com");
+//		c.setNom("Elhak");
+//		c.setPrenom("Diea");
+//		c.setAdresse(a);
+//		c.setCompteCourant(cp);
+//		c.setCompteEpargne(ce);
+//		crudClientDao.save(c);
+		//Supprimer un client:
+		crudClientDao.deleteById(17);
 	}
 
 }

@@ -73,6 +73,12 @@ public class Client extends Personne {
 		this.compteEpargne = compteEpargne;
 	}
 
+	@Override
+	public String toString() {
+		return "Client [email=" + email + ", adresse=" + adresse + ", compteCourant=" + compteCourant
+				+ ", compteEpargne=" + compteEpargne + "]";
+	}
+
 
 
 }
