@@ -52,6 +52,7 @@ public class Carlosmarouav3ApplicationTests {
 //		crudClientDao.save(c);
 
 		//Supprimer un client:
+<<<<<<< HEAD
 		
 		
 		//Virement avec montant dans la methode
@@ -60,6 +61,13 @@ public class Carlosmarouav3ApplicationTests {
 //		clientWSImpl.faireVirementComptesCourant("2", "5", 200);
 		
 
+=======
+//		crudClientDao.deleteById(5);
+		//Modifier un client: 
+		Client c =crudClientDao.getOne(14);
+		c.setNom("Khemiri");
+		crudClientDao.save(c);
+>>>>>>> 59f94f6b029a8c8698462f2c904a76a5478fc8bf
 	}
 
 }
