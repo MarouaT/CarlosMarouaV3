@@ -16,7 +16,7 @@ import org.proxi.spring.model.Conseiller;
 
 @Produces("application/xml,application/json")
 @Consumes("application/xml,application/json")
-@Path("/Conseillerservice")
+@Path("/conseillerservice")
 public interface IConseillerWS {
 
 	@GET

@@ -29,7 +29,8 @@ public class ConseillerWSImpl implements IConseillerWS {
 
 	@Override
 	public Response updateConseiller(Conseiller c) {
-		return null;
+		crudConseillerDAO.save(c);
+		return Response.ok().build();
 	}
 
 	@Override

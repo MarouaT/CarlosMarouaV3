@@ -1,6 +1,6 @@
 package org.proxi;
 
-import static org.junit.Assert.assertNotNull;
+import java.util.Optional;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,6 +10,8 @@ import org.proxi.spring.webservice.ConseillerWSImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -28,10 +30,10 @@ public class Carlosmarouav3ApplicationTestsConseiller {
 		//TEST METHODE SAVE
 		
 //		Conseiller co1 = new Conseiller();
-//		co1.setLogin("admin4");
+//		co1.setLogin("admin5");
 //		co1.setPassword("2018");
-//		co1.setNom("Creach4");
-//		co1.setPrenom("Yann4");
+//		co1.setNom("Creach5");
+//		co1.setPrenom("Yann5");
 //		
 //		crudConseillerDao.save(co1);
 		
@@ -42,14 +44,20 @@ public class Carlosmarouav3ApplicationTestsConseiller {
 		
 		// Test Methode REMOVE
 		
-
-//		crudConseillerDao.delete(crudConseillerDao.getOne(7));
-		
-//		conseillerWSImpl.deleteConseillers("7");
 		
 //		crudConseillerDao.deleteById(1);
 		
-		conseillerWSImpl.deleteConseillers("2");
+//		conseillerWSImpl.deleteConseillers("2");
+		
+		//TEST Update
+		
+//		Optional<Conseiller> c = crudConseillerDao.findById(3);
+//		c.get().setNom("CREACH");
+//		crudConseillerDao.save(c.get());
+		
+		// Test Update sur REST OK
+		
+		
 		
 		
 		
