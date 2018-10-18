@@ -21,6 +21,7 @@ public class Carlosmarouav3ApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 //		assertNotNull(crudClientDao);
 //		Client c = new Client();
 //		Adresse a = new Adresse();
