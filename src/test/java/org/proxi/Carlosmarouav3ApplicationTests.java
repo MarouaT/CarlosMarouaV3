@@ -47,7 +47,11 @@ public class Carlosmarouav3ApplicationTests {
 //		c.setPrenom("Diea");
 
 		//Supprimer un client:
-
+//		crudClientDao.deleteById(5);
+		//Modifier un client: 
+		Client c =crudClientDao.getOne(14);
+		c.setNom("Khemiri");
+		crudClientDao.save(c);
 	}
 
 }

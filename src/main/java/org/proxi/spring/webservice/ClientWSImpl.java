@@ -30,7 +30,8 @@ public class ClientWSImpl implements IClientWS {
 
 	@Override
 	public Response updateClient(Client c) {
-		return null;
+		crudClientDAO.save(c);
+		return Response.ok().build();
 	}
 
 	@Override
@@ -41,7 +42,8 @@ public class ClientWSImpl implements IClientWS {
 
 	@Override
 	public Response deleteClients(String id) {
-		crudClientDAO.deleteById(Integer.valueOf(id));
+		int intId = Integer.valueOf(id);
+		crudClientDAO.deleteById(intId);
 		return Response.ok().build();
 	}
 
