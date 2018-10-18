@@ -1,5 +1,6 @@
 package org.proxi.spring.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
@@ -13,12 +14,12 @@ public class Client extends Personne {
 	private String email;
 	@Embedded
 	Adresse adresse;
-	@OneToOne
+	@OneToOne(cascade= {CascadeType.ALL})
 	@JoinColumn(name="comptecourant_id",unique=true)
-	CompteCourant comptecourant;
-	@OneToOne
+	CompteCourant compteCourant;
+	@OneToOne(cascade= {CascadeType.ALL})
 	@JoinColumn(name="compteepargne_id",unique=true)
-	CompteEpargne compteepargne;
+	CompteEpargne compteEpargne;
 
 	
 	
@@ -36,8 +37,8 @@ public class Client extends Personne {
 		super(nom, prenom);
 		this.email = email;
 		this.adresse = adresse;
-		this.comptecourant = comptecourant;
-		this.compteepargne = compteepargne;
+		this.compteCourant = comptecourant;
+		this.compteEpargne = compteepargne;
 	}
 
 	public String getEmail() {
@@ -56,20 +57,22 @@ public class Client extends Personne {
 		this.adresse = adresse;
 	}
 
-	public CompteCourant getComptecourant() {
-		return comptecourant;
+	public CompteCourant getCompteCourant() {
+		return compteCourant;
 	}
 
-	public void setComptecourant(CompteCourant comptecourant) {
-		this.comptecourant = comptecourant;
+	public void setCompteCourant(CompteCourant compteCourant) {
+		this.compteCourant = compteCourant;
 	}
 
-	public CompteEpargne getCompteepargne() {
-		return compteepargne;
+	public CompteEpargne getCompteEpargne() {
+		return compteEpargne;
 	}
 
-	public void setCompteepargne(CompteEpargne compteepargne) {
-		this.compteepargne = compteepargne;
+	public void setCompteEpargne(CompteEpargne compteEpargne) {
+		this.compteEpargne = compteEpargne;
 	}
+
+
 
 }
