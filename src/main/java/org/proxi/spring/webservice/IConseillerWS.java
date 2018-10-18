@@ -20,23 +20,23 @@ import org.proxi.spring.model.Conseiller;
 public interface IConseillerWS {
 
 	@GET
-	@Path("/Conseillers/{id}")
+	@Path("/conseillers/{id}")
 	Conseiller getConseiller(@PathParam("id") String id);
 
 	@GET
-	@Path("/Conseillers/")
+	@Path("/conseillers/")
 	List<Conseiller> getConseillers();
 
 	@PUT
-	@Path("/Conseillers/")
+	@Path("/conseillers/")
 	Response updateConseiller(Conseiller c);
 
 	@POST
-	@Path("/Conseillers/")
+	@Path("/conseillers/")
 	Response addConseiller(Conseiller c);
 
 	@DELETE
-	@Path("/Conseillers/{id}")
+	@Path("/conseillers/{id}")
 	Response deleteConseillers(@PathParam("id") String id);
 
 }
