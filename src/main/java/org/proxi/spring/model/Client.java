@@ -14,17 +14,15 @@ public class Client extends Personne {
 	private String email;
 	@Embedded
 	Adresse adresse;
-	@OneToOne(cascade= {CascadeType.ALL})
-	@JoinColumn(name="comptecourant_id",unique=true)
+	@OneToOne(cascade = { CascadeType.ALL })
+	@JoinColumn(name = "comptecourant_id", unique = true)
 	CompteCourant compteCourant;
-	@OneToOne(cascade= {CascadeType.ALL})
-	@JoinColumn(name="compteepargne_id",unique=true)
+	@OneToOne(cascade = { CascadeType.ALL })
+	@JoinColumn(name = "compteepargne_id", unique = true)
 	CompteEpargne compteEpargne;
 
-	
-	
 	public Client() {
-		
+
 	}
 
 	public Client(String nom, String prenom) {
@@ -73,12 +71,26 @@ public class Client extends Personne {
 		this.compteEpargne = compteEpargne;
 	}
 
+//	public void ajouterSolde(int idCompteCourant, double montant) {
+//		
+//		compteCourant.setSoldeCourant(compteCourant.getSoldeCourant() + montant);
+//	}
+//
+//	public void retirerSolde(CompteCourant compteCourant, double montant) {
+//		this.compteCourant = compteCourant;
+//
+//		if (compteCourant.getSoldeCourant() >= montant) {
+//
+//			compteCourant.setSoldeCourant(compteCourant.getSoldeCourant() - montant);
+//		} else {
+//			System.out.println("SOLDE INSUFISANT");
+//		}
+//	}
+
 	@Override
 	public String toString() {
 		return "Client [email=" + email + ", adresse=" + adresse + ", compteCourant=" + compteCourant
 				+ ", compteEpargne=" + compteEpargne + "]";
 	}
-
-
 
 }

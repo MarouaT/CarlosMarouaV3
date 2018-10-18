@@ -13,6 +13,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
 import org.proxi.spring.model.Client;
+import org.proxi.spring.model.Virement;
 
 @Produces("application/xml,application/json")
 @Consumes("application/xml,application/json")
@@ -39,4 +40,8 @@ public interface IClientWS {
 	@Path("/clients/{id}")
 	Response deleteClients(@PathParam("id") String id);
 
+	@PUT
+	@Path("/clients/virement/{id1}/{id2}")
+	Response faireVirementComptesCourant(@PathParam("id1") String id1, @PathParam("id2") String id2, Virement montantVirement);
+	
 }

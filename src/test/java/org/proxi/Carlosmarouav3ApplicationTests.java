@@ -34,7 +34,7 @@ public class Carlosmarouav3ApplicationTests {
 //		Adresse a = new Adresse();
 //		CompteCourant cp = new CompteCourant();
 //		CompteEpargne ce = new CompteEpargne();
-
+////
 //		ce.setSoldeEpargne(0);
 //		cp.setDecouvert(0);
 //		cp.setSoldeCourant(1500);
@@ -43,10 +43,22 @@ public class Carlosmarouav3ApplicationTests {
 //		a.setRue("rue du l'opéra");
 //		a.setVille("Paris");
 //		c.setEmail("Diea@yahoo.com");
-//		c.setNom("Elhak");
-//		c.setPrenom("Diea");
+//		c.setNom("mande");
+//		c.setPrenom("Marlon");
+//		c.setAdresse(a);
+//		c.setCompteCourant(cp);
+//		c.setCompteEpargne(ce);
+//		
+//		crudClientDao.save(c);
 
 		//Supprimer un client:
+		
+		
+		//Virement avec montant dans la methode
+		
+		
+//		clientWSImpl.faireVirementComptesCourant("2", "5", 200);
+		
 
 	}
 
