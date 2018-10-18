@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public abstract class Personne {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	private int id;
 	private String nom;
 	private String prenom;
 	
@@ -31,7 +31,7 @@ public abstract class Personne {
 	}
 	
 	
-	public Personne(Long id, String nom, String prenom) {
+	public Personne(int id, String nom, String prenom) {
 		super();
 		this.id = id;
 		this.nom = nom;
@@ -39,10 +39,10 @@ public abstract class Personne {
 	}
 
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getNom() {

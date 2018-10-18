@@ -27,11 +27,14 @@ public class Carlosmarouav3ApplicationTests {
 	public void contextLoads() {
 
 //		assertNotNull(crudClientDao);
+
 		//Créer un client:
+
 //		Client c = new Client();
 //		Adresse a = new Adresse();
 //		CompteCourant cp = new CompteCourant();
 //		CompteEpargne ce = new CompteEpargne();
+
 //		ce.setSoldeEpargne(0);
 //		cp.setDecouvert(0);
 //		cp.setSoldeCourant(1500);
@@ -42,12 +45,9 @@ public class Carlosmarouav3ApplicationTests {
 //		c.setEmail("Diea@yahoo.com");
 //		c.setNom("Elhak");
 //		c.setPrenom("Diea");
-//		c.setAdresse(a);
-//		c.setCompteCourant(cp);
-//		c.setCompteEpargne(ce);
-//		crudClientDao.save(c);
+
 		//Supprimer un client:
-		crudClientDao.deleteById(17);
+
 	}
 
 }

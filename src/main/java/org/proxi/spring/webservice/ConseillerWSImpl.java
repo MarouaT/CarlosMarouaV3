@@ -40,8 +40,9 @@ public class ConseillerWSImpl implements IConseillerWS {
 
 	@Override
 	public Response deleteConseillers(String id) {
-
-		return null;
+		int intId = Integer.valueOf(id);
+		crudConseillerDAO.deleteById(intId);
+		return Response.ok().build();
 	}
 
 }
