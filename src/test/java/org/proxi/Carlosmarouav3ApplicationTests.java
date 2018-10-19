@@ -30,26 +30,26 @@ public class Carlosmarouav3ApplicationTests {
 
 		//Créer un client:
 
-//		Client c = new Client();
-//		Adresse a = new Adresse();
-//		CompteCourant cp = new CompteCourant();
-//		CompteEpargne ce = new CompteEpargne();
+		Client c = new Client();
+		Adresse a = new Adresse();
+		CompteCourant cp = new CompteCourant();
+		CompteEpargne ce = new CompteEpargne();
 ////
-//		ce.setSoldeEpargne(0);
-//		cp.setDecouvert(0);
-//		cp.setSoldeCourant(1500);
-//		a.setCodePostal(75019);
-//		a.setNumero(9);
-//		a.setRue("rue du l'opéra");
-//		a.setVille("Paris");
-//		c.setEmail("Diea@yahoo.com");
-//		c.setNom("mande");
-//		c.setPrenom("Marlon");
-//		c.setAdresse(a);
-//		c.setCompteCourant(cp);
-//		c.setCompteEpargne(ce);
-//		
-//		crudClientDao.save(c);
+		ce.setSoldeEpargne(0);
+		cp.setDecouvert(0);
+		cp.setSoldeCourant(900);
+		a.setCodePostal(75000);
+		a.setNumero(9);
+		a.setRue("rue du l'opéra");
+		a.setVille("Paris");
+		c.setEmail("Diea@yahoo.com");
+		c.setNom("Patrick");
+		c.setPrenom("Logan");
+		c.setAdresse(a);
+		c.setCompteCourant(cp);
+		c.setCompteEpargne(ce);
+		
+		crudClientDao.save(c);
 
 		//Supprimer un client:
 
