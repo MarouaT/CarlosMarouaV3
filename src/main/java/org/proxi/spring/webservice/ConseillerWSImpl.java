@@ -10,8 +10,8 @@ import org.proxi.spring.model.Conseiller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 /**
- * Dans cette classe qui implémente l'interface des méthodes principale des conseillers, on définit ces méthode et on fait appel à l'interface
- * du CRUD des conseillers qui étend la jpaRespository
+ * Dans cette classe qui implémente l'interface des méthodes principales pour agir sur le Conseiller, on définit ces méthodes et on fait appel à l'interface
+ * du CRUD qui étend la jpaRespository
  * @author Carlos & Maroua  
  */
 @Service("ConseillerWebService")

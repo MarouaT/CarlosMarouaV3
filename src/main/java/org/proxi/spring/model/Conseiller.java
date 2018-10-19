@@ -3,7 +3,7 @@ package org.proxi.spring.model;
 import javax.persistence.Entity;
 import javax.xml.bind.annotation.XmlRootElement;
 /**
- * La class conseiller qui est l'utilisateur principal de l'application et que va lui faciliter ses taches
+ * La classe Conseiller est l'utilisateur principal de l'application, c'est grâce à cette classe que l'ont va pouvoir attribuer un Login et un Password pour entrer dans l'application
  * @author Carlos & Maroua  
  */
 @XmlRootElement

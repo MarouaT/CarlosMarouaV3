@@ -11,7 +11,7 @@ import org.proxi.spring.model.Virement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 /**
- * Dans cette classe qui implémente l'interface des méthodes principale de clients, on définit ces méthode et on fait appel à l'interface
+ * Dans cette classe qui implémente l'interface des méthodes principales pour agir sur le Client, on définit ces méthodes et on fait appel à l'interface
  * du CRUD qui étend la jpaRespository
  * @author Carlos & Maroua  
  */

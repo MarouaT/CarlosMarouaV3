@@ -14,8 +14,8 @@ import javax.ws.rs.core.Response;
 
 import org.proxi.spring.model.Conseiller;
 /**
- * C'est l'interface qui contient les principaux méthodes pour les conseillers et qui contient les URL d'entrée pour chaque méthode et 
- * qui contient aussi le point d'entrée principale et les method utilisé pour l'exécutions de ces méthodes 
+ * C'est l'interface qui contient les principales méthodes pour les conseillers et qui contient les URL d'entrée pour chaque méthode. 
+ * Ainsi elle contient aussi le point d'entrée (EndPoint) principal et les methodes HTTP utilisées pour l'exécution de ces méthodes
  * @author Carlos & Maroua  
  */
 @Produces("application/xml,application/json")

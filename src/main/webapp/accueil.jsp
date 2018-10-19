@@ -13,7 +13,7 @@
 
 
 	<header>
-		<img src="images/proxibanque.png" />
+		<img src="img/proxibanque.png" />
 		<h1>Espace Conseiller</h1>
 		<nav>
 			<div class="topnav">

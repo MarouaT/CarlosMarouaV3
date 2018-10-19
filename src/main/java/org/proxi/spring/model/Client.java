@@ -7,8 +7,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.xml.bind.annotation.XmlRootElement;
 /**
- * La class client c'est l'une des plus importante class de l'application puisu'elle tourne principalement au tour de lui et pour lui faciliter
- * ses opérations bancaires 
+ * La class Client est l'une des plus importante de l'application car elle tourne principalement autour d'elle. Elle sera utiliser pour toutes
+ * les opérations bancaires 
  * @author Carlos & Maroua  
  */
 @XmlRootElement

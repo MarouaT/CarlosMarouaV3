@@ -14,7 +14,11 @@ import org.proxi.spring.dao.CrudClientDAO;
 import org.proxi.spring.model.Client;
 import org.proxi.spring.model.Conseiller;
 import org.springframework.beans.factory.annotation.Autowired;
-
+/**
+ * La ServletConnexion permet de rediriger vers la page d'accueil si les Login et Password fixés sont bons. Dans le cas contraire elle renvoi vers une JSP avec un message d'erreur 
+ * @author Adminl
+ *
+ */
 @WebServlet("/ServletConnexion")
 public class ServletConnexion extends HttpServlet{
 	private static final long serialVersionUID = 1L;
@@ -45,9 +49,6 @@ public class ServletConnexion extends HttpServlet{
 
 		HttpSession maSession = request.getSession();
 		maSession.setAttribute("conseillerlog", cons);
-		
-		
-		
 		
 		try {
 			List<Client> maListe = dao.findAll();
