@@ -47,40 +47,19 @@ public class ClientWSImpl implements IClientWS {
 		return Response.ok().build();
 	}
 
-//	@Override
-//	public Response faireVirementComptesCourant(String id1, String id2, double montant) {
-//		Optional<Client> optional = crudClientDAO.findById(Integer.valueOf(id1));
-//		Optional<Client> optional2 = crudClientDAO.findById(Integer.valueOf(id2));
-//
-//		if (optional.get().getCompteCourant().getSoldeCourant() >= montant) {
-//
-//			optional.get().getCompteCourant()
-//					.setSoldeCourant(optional.get().getCompteCourant().getSoldeCourant() - montant);
-//			crudClientDAO.save(optional.get());
-//			optional2.get().getCompteCourant()
-//					.setSoldeCourant(optional2.get().getCompteCourant().getSoldeCourant() + montant);
-//			crudClientDAO.save(optional2.get());
-//
-//		} else {
-//			System.out.println("SOLDE INSUFISANT");
-//		}
-//
-//		return Response.ok().build();
-//	}
-
 	@Override
 	public Response faireVirementComptesCourant(String id1, String id2, Virement montantVirement) {
-		
+
 		Optional<Client> optional = crudClientDAO.findById(Integer.valueOf(id1));
 		Optional<Client> optional2 = crudClientDAO.findById(Integer.valueOf(id2));
 
 		if (optional.get().getCompteCourant().getSoldeCourant() >= montantVirement.getMontantVirement()) {
 
-			optional.get().getCompteCourant()
-					.setSoldeCourant(optional.get().getCompteCourant().getSoldeCourant() - montantVirement.getMontantVirement());
+			optional.get().getCompteCourant().setSoldeCourant(
+					optional.get().getCompteCourant().getSoldeCourant() - montantVirement.getMontantVirement());
 			crudClientDAO.save(optional.get());
-			optional2.get().getCompteCourant()
-					.setSoldeCourant(optional2.get().getCompteCourant().getSoldeCourant() + montantVirement.getMontantVirement());
+			optional2.get().getCompteCourant().setSoldeCourant(
+					optional2.get().getCompteCourant().getSoldeCourant() + montantVirement.getMontantVirement());
 			crudClientDAO.save(optional2.get());
 
 		} else {
