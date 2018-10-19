@@ -14,7 +14,11 @@ import javax.ws.rs.core.Response;
 
 import org.proxi.spring.model.Client;
 import org.proxi.spring.model.Virement;
-
+/**
+ * C'est l'interface qui contient les principaux méthodes pour les clients et qui contient les URL d'entrée pour chaque méthode et 
+ * qui contient aussi le point d'entrée principale et les method utilisé pour l'exécutions de ces méthodes
+ * @author Carlos & Maroua  
+ */
 @Produces("application/xml,application/json")
 @Consumes("application/xml,application/json")
 @Path("/clientservice")

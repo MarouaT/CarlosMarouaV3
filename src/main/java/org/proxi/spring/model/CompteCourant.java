@@ -2,6 +2,10 @@ package org.proxi.spring.model;
 
 
 import javax.persistence.Entity;
+/**
+ * La class compte courant représente le compte qui est associé à un client donc il a une relation one to one avec le client 
+ * @author Carlos & Maroua  
+ */
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;

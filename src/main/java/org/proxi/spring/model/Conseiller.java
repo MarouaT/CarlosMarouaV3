@@ -2,7 +2,10 @@ package org.proxi.spring.model;
 
 import javax.persistence.Entity;
 import javax.xml.bind.annotation.XmlRootElement;
-
+/**
+ * La class conseiller qui est l'utilisateur principal de l'application et que va lui faciliter ses taches
+ * @author Carlos & Maroua  
+ */
 @XmlRootElement
 @Entity
 public class Conseiller extends Personne {

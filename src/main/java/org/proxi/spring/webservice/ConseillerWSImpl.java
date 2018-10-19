@@ -9,7 +9,11 @@ import org.proxi.spring.dao.CrudConseillerDAO;
 import org.proxi.spring.model.Conseiller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+/**
+ * Dans cette classe qui implémente l'interface des méthodes principale des conseillers, on définit ces méthode et on fait appel à l'interface
+ * du CRUD des conseillers qui étend la jpaRespository
+ * @author Carlos & Maroua  
+ */
 @Service("ConseillerWebService")
 public class ConseillerWSImpl implements IConseillerWS {
 

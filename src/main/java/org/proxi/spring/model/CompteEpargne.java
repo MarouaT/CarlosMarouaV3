@@ -6,7 +6,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.xml.bind.annotation.XmlRootElement;
-
+/**
+ * La class compte epargne représente le compte qui est associé à un client donc il a une relation one to one avec le client 
+ * @author Carlos & Maroua  
+ */
 @XmlRootElement
 @Entity
 public class CompteEpargne {

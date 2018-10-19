@@ -2,6 +2,13 @@ package org.proxi.spring.model;
 
 import javax.persistence.Embeddable;
 import javax.xml.bind.annotation.XmlRootElement;
+/**
+ * C'est la classe adresse qui est réellement une fiche appartenant à clients puisqu'elle contient beaucoup du détails qui vont allourdir le tableau client
+ *  on a choisit alors de la créer à part et de la lié à client avec la fonction embeddeble comme ça dans la base de donnée la table client aura aussi
+ *  les attributs de l'adresse
+ *  
+ *  @author Carlos&Maroua
+ */
 @XmlRootElement
 @Embeddable
 public class Adresse {

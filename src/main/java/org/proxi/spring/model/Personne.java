@@ -7,7 +7,10 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.xml.bind.annotation.XmlRootElement;
-
+/**
+ * C'est une classe abstraite qui a l'id le nom et le prénom de clients et conseillers et ces derniers héritent de cette classe.
+ * @author Carlos & Maroua  
+ */
 @XmlRootElement
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)

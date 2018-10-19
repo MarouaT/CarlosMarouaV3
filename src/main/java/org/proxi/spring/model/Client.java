@@ -6,7 +6,11 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.xml.bind.annotation.XmlRootElement;
-
+/**
+ * La class client c'est l'une des plus importante class de l'application puisu'elle tourne principalement au tour de lui et pour lui faciliter
+ * ses opérations bancaires 
+ * @author Carlos & Maroua  
+ */
 @XmlRootElement
 @Entity
 public class Client extends Personne {
